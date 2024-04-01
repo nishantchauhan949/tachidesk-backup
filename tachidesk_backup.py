@@ -42,7 +42,7 @@ def tachidesk_create_backup():
             f'tachidesk_backup.tachidesk_create_backup() :: {file_name} downloaded successfully :: {req.status_code}')
 
         # calling delete_old_files.main_function
-        main_function(path=BACKUPS_WORKING_DIR, extension='.gz', days='3')
+        main_function(path=BACKUPS_WORKING_DIR, extension='.tachibk', days='3')
 
     except Exception as e:
         logger.error(f'tachidesk_backup.tachidesk_create_backup() :: Some unexpected error occurred :: {e}')
